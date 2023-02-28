@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./list.component.css']
 })
 export class ListComponent {
-  currentItem = 'Input Item'
+  currentItem = '';
   list = ['Wash Dishes', 'Walk Dog']
   
   //method to add task to list; method referenced in child component
