@@ -9,7 +9,9 @@ import { InlineComponent } from './inline/inline.component';
 import { PropertyBindingComponent } from './property-binding/property-binding.component';
 import { EventBindingComponent } from './event-binding/event-binding.component';
 import { ClassBindingComponent } from './class-binding/class-binding.component';
-
+import { StyleBindingComponent } from './style-binding/style-binding.component';
+import {DataService} from './data.service';
+import { ServiceExampleComponent } from './service-example/service-example.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,12 +21,14 @@ import { ClassBindingComponent } from './class-binding/class-binding.component';
     PropertyBindingComponent,
     EventBindingComponent,
     ClassBindingComponent,
+    StyleBindingComponent,
+    ServiceExampleComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
