@@ -1,0 +1,17 @@
+div >div > * {
+    padding: 5px;
+}
+
+input {
+    margin-right: 10px;
+}
+
+input, button {
+    border: 3px solid black;
+    border-radius: 3px;
+}
+
+button {
+    background-color: black;
+    color: white;
+}

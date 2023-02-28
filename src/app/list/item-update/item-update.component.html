@@ -1,0 +1,10 @@
+<div>
+    My Item: {{item}}
+
+    <div style="margin-top: 15px;">
+        <label for="new-task">Add a Task</label>
+        <input type="text" id="new-task" #newtask>
+        <button type="button" (click)="updateItem(newtask.value)">ADD TASK</button>
+    </div>
+</div>
+ 

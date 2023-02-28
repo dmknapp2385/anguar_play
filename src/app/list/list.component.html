@@ -1,0 +1,11 @@
+<div class="form">
+    <app-item-update [item]="currentItem" (itemUpdater)="addTask($event)"></app-item-update>
+</div>
+
+<div class="list">
+    
+    <ul>
+        <li  *ngFor="let item of list">{{item}}</li>
+    </ul>
+    
+</div>

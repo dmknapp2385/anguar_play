@@ -14,5 +14,5 @@ import { Component } from '@angular/core';
 
 //properties and methods defined here, to be used in the html sheet with {{title}}
 export class AppComponent {
-  title = 'ng4-playground';
+  title = 'To Do List';
 }
