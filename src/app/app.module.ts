@@ -11,7 +11,11 @@ import { EventBindingComponent } from './event-binding/event-binding.component';
 import { ClassBindingComponent } from './class-binding/class-binding.component';
 import { StyleBindingComponent } from './style-binding/style-binding.component';
 import {DataService} from './data.service';
-import { ServiceExampleComponent } from './service-example/service-example.component'
+import { ServiceExampleComponent } from './service-example/service-example.component';
+import { AnimationsComponent } from './animations/animations.component'
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations'
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,10 +27,12 @@ import { ServiceExampleComponent } from './service-example/service-example.compo
     ClassBindingComponent,
     StyleBindingComponent,
     ServiceExampleComponent,
+    AnimationsComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule, 
+    BrowserAnimationsModule
   ],
   providers: [DataService],
   bootstrap: [AppComponent]
